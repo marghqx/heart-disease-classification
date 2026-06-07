@@ -55,7 +55,7 @@ Maszyna Wektorów Nośnych dąży do znalezienia optymalnej hiperpłaszczyzny ro
 ### 2.3. RandomForestClassifier
 Las Losowy to algorytm zespołowy (ensemble learning) oparty na technice agregacji (bagging).
 * **Przetwarzanie danych:** Algorytm tworzy zbiór niezależnych drzew decyzyjnych. Każde drzewo przetwarza dane wejściowe poprzez sekwencyjne podziały (splity) przestrzeni cech przy użyciu prostych nierówności (np. *czy wiek > 55 i cholesterol < 240?*). Podziały są dobierane tak, aby zmaksymalizować czystość powstałych węzłów (mierzoną współczynnikiem Giniego lub entropią).
-* **Decyzja:** Każde drzewo w lesie oddaje swój niezależny głos na klasę 0 lub 1. Ostateczna prognoza jest wynikiem głosowania większościowego. Las losowy z natury jest odporny na brak skalowania danych, choć w projekcie przeskalowano dane jednolicie dla wszystkich modeli.
+* **Decyzja:** Każde drzewo w lesie oddaje swój niezależny głos na klasę 0 lub 1. Ostateczna prognoza jest wynikiem głosowania większościowego.
 
 ### 2.4. MLPClassifier
 Wielowarstwowy Perceptron to sztuczna sieć neuronowa typu feed-forward.
