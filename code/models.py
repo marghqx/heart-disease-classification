@@ -14,9 +14,9 @@ def load_data():
     train_df = pd.read_csv(os.path.join(data_dir, 'train_scaled.csv'))
     test_df = pd.read_csv(os.path.join(data_dir, 'test_scaled.csv'))
     
-    X_train = train_df[['age', 'trestbps', 'chol']]
+    X_train = train_df[['age', 'trestbps', 'chol', 'ca', 'cp', 'thalach']]
     y_train = train_df['target']
-    X_test = test_df[['age', 'trestbps', 'chol']]
+    X_test = test_df[['age', 'trestbps', 'chol', 'ca', 'cp', 'thalach']]
     y_test = test_df['target']
     
     return X_train, X_test, y_train, y_test
@@ -28,7 +28,7 @@ def train_base_models():
         'RandomForest (Base)': RandomForestClassifier(random_state=42),
         'SVC (Base)': SVC(random_state=42),
         'KNN (Base)': KNeighborsClassifier(),
-        'MLP Sklearn (Base)': MLPClassifier(random_state=42, max_iter=1000)
+        'MLP Sklearn (Base)': MLPClassifier(random_state=42, max_iter=3000)
     }
     
     print("Trenowanie bazowych modeli:")
