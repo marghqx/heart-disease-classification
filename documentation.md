@@ -60,7 +60,7 @@ Wielowarstwowy Perceptron to sztuczna sieć neuronowa typu feed-forward.
 
 ## 3. Wstępne wyniki testowe
 
-Przed przystąpieniem do zaawansowanej optymalizacji parametrów (zadanie dla Części II raportu), uruchomiono wszystkie cztery algorytmy na domyślnych ustawieniach pakietu `scikit-learn` w celu wyznaczenia linii bazowej (baseline).
+Przed przystąpieniem do zaawansowanej optymalizacji parametrów, uruchomiono wszystkie cztery algorytmy na domyślnych ustawieniach pakietu `scikit-learn` w celu wyznaczenia linii bazowej (baseline).
 
 Po podziale zbioru w stosunku 80% (trening) do 20% (test) oraz zastosowaniu `StandardScaler`, modele osiągnęły następującą dokładność (`Accuracy`) na zbiorze testowym:
 
