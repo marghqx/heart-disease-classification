@@ -14,10 +14,8 @@ def generate_plots():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(current_dir)
     plots_dir = os.path.join(project_root, 'plots')
-    
     os.makedirs(plots_dir, exist_ok=True)
     
-    # Rozkład cech
     plt.figure(figsize=(15, 5))
     features = ['age', 'trestbps', 'chol']
     for i, col in enumerate(features, 1):
@@ -28,7 +26,6 @@ def generate_plots():
     plt.savefig(os.path.join(plots_dir, 'features_distribution.png'), dpi=300)
     plt.close()
     
-    # Macierz korelacji
     plt.figure(figsize=(6, 5))
     sns.heatmap(df[['age', 'trestbps', 'chol', 'target']].corr(), annot=True, cmap='coolwarm', fmt=".2f")
     plt.title("Correlation Matrix")
@@ -36,7 +33,7 @@ def generate_plots():
     plt.savefig(os.path.join(plots_dir, 'correlation_matrix.png'), dpi=300)
     plt.close()
     
-    print(f"The plots have been saved in: {plots_dir}")
+    print(f"Wykresy zostały zapisane w: {plots_dir}")
 
 if __name__ == "__main__":
     generate_plots()

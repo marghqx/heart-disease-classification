@@ -31,11 +31,10 @@ def prepare_data():
     data_dir = os.path.join(project_root, 'data')
     
     os.makedirs(data_dir, exist_ok=True)
-    
     train_df.to_csv(os.path.join(data_dir, 'train_scaled.csv'), index=False)
     test_df.to_csv(os.path.join(data_dir, 'test_scaled.csv'), index=False)
     
-    print(f"The files have been saved in: {data_dir}")
+    print(f"Dane zostały zapisane w: {data_dir}")
 
 if __name__ == "__main__":
     prepare_data()
