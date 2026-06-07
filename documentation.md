@@ -82,5 +82,3 @@ Po podziale zbioru w stosunku 80% (trening) do 20% (test) oraz zastosowaniu `Sta
 Najwyższą skuteczność w konfiguracji bazowej uzyskały algorytmy Random Forest oraz KNN, osiągając identyczną wartość accuracy na poziomie 90,16%. Wynik ten wskazuje, że zastosowany zestaw cech, obejmujący zarówno parametry fizjologiczne, jak i istotne wskaźniki kliniczne (m.in. liczbę zablokowanych naczyń oraz typ bólu w klatce piersiowej), dostarcza wystarczających informacji do skutecznego rozróżniania klas.
 
 Wszystkie analizowane modele osiągnęły dokładność w przedziale od 85% do 90%, co potwierdza wysoką wartość diagnostyczną wykorzystanych zmiennych. Dobre wyniki uzyskane przy domyślnych ustawieniach parametrów sugerują istnienie wyraźnych zależności pomiędzy cechami opisującymi pacjentów a zmienną decyzyjną.
-
-Otrzymane rezultaty stanowią punkt odniesienia dla dalszych etapów badań, obejmujących optymalizację hiperparametrów oraz analizę skuteczności bardziej zaawansowanych modeli, w tym głębokich sieci neuronowych.
